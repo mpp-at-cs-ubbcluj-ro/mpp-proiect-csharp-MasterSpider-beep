@@ -1,0 +1,109 @@
+2024-03-18 10:23:20,977 [1] INFO FlightsRepository - Entering GetFiltered with destination: , date
+2024-03-18 10:28:50,743 [1] INFO FlightsRepository - Entering GetFiltered with destination: , date
+2024-03-18 10:53:00,686 [1] INFO FlightsRepository - Entering GetFiltered with destination: , date
+2024-03-18 10:54:28,703 [1] INFO FlightsRepository - Entering GetFiltered with destination: , date
+2024-03-18 10:54:28,812 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:11:26,378 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:11:26,606 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:11:26,610 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:11:26,617 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:11:26,618 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:11:26,631 [1] INFO FlightsRepository - Exisitn findFiltered, found 0 flights!
+2024-03-18 11:12:24,487 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:12:24,607 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:12:24,611 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:12:24,617 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:12:38,368 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:14:20,200 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:14:20,394 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:14:21,252 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:14:32,027 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:14:32,151 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:14:33,367 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:16:37,360 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:16:37,549 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:16:37,553 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:16:56,919 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:17:02,233 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:17:02,234 [1] INFO FlightsRepository - Exisitn findFiltered, found 0 flights!
+2024-03-18 11:18:37,043 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:18:37,161 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:18:37,165 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:18:44,307 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:18:44,307 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:19:19,196 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:19:19,334 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:19:19,337 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:19:19,347 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:19:34,848 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:22:14,199 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:22:14,353 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:22:14,356 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:22:14,384 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:22:16,836 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:22:16,837 [1] INFO FlightsRepository - Exisitn findFiltered, found 0 flights!
+2024-03-18 11:22:22,012 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:22:22,127 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:22:22,130 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:22:22,145 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:22:29,547 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:26:29,270 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:26:29,388 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:26:29,392 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:26:29,458 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:31:45,207 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:31:45,377 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:31:45,381 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:31:45,411 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:31:45,412 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:31:45,415 [1] INFO FlightsRepository - Exisitn findFiltered, found 0 flights!
+2024-03-18 11:32:01,455 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:32:01,547 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:32:01,549 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:32:01,555 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:32:08,975 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:32:42,385 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:32:42,487 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:32:42,489 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:32:42,495 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:32:46,585 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:34:43,455 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:34:43,604 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:34:43,607 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:34:43,616 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:34:45,694 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:34:45,697 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2024-03-18 11:34:51,115 [1] INFO FlightsRepository - Entering Update with flight id 3
+2024-03-18 11:36:12,256 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:36:12,396 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:36:12,399 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:36:12,408 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:36:12,408 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:36:12,410 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2024-03-18 11:36:12,413 [1] INFO FlightsRepository - Entering Update with flight id 3
+2024-03-18 11:40:40,168 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:40:40,733 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:40:40,741 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:40:40,778 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:40:40,779 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:40:40,784 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2024-03-18 11:40:40,786 [1] INFO FlightsRepository - Entering Update with flight id 3
+2024-03-18 11:47:54,109 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 11:47:55,184 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 11:47:55,190 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 11:47:55,228 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 11:47:55,229 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 11:47:55,234 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2024-03-18 11:48:25,555 [1] INFO FlightsRepository - Entering Update with flight id 3
+2024-03-18 12:06:59,507 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2024-03-18 12:07:00,143 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2024-03-18 12:07:00,149 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2024-03-18 12:07:00,187 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2024-03-18 12:07:00,188 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 12:07:00,191 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2024-03-18 12:07:11,218 [1] INFO FlightsRepository - Entering Update with flight id 3
+2024-03-18 12:07:11,233 [1] INFO FlightsRepository - Exiting Update with value True
+2024-03-18 12:07:13,369 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2024-03-18 12:07:13,370 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2024-03-18 12:07:16,579 [1] INFO FlightsRepository - Entering Update with flight id 3
+2024-03-18 12:07:16,587 [1] INFO FlightsRepository - Exiting Update with value True
