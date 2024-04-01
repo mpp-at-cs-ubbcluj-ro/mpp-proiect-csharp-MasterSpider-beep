@@ -8,19 +8,19 @@ public class FlightFilter
     public string? Destination { get => destination; set => destination = value; }
     public DateOnly? DepartureDate { get => departureDate; set => departureDate = value; }
 
-    public FlightFilter(string destination, DateOnly departureDate)
+    public FlightFilter(string? destination, DateOnly? departureDate)
     {
         Destination = destination;
         DepartureDate = departureDate;
     }
 
-    public FlightFilter(string destination)
+    public FlightFilter(string? destination)
     {
         Destination = destination;
         DepartureDate = null;
     }
 
-    public FlightFilter(DateOnly departureDate)
+    public FlightFilter(DateOnly? departureDate)
     {
         DepartureDate = departureDate;
         Destination = null;

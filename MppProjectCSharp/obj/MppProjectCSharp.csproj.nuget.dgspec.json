@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sem4\\Mpp\\MppProjectCSharp\\MppProjectCSharp\\MppProjectCSharp.csproj": {}
+    "D:\\Sem4\\Mpp\\mpp-proiect-csharp-MasterSpider-beep\\MppProjectCSharp\\MppProjectCSharp.csproj": {}
   },
   "projects": {
-    "D:\\Sem4\\Mpp\\MppProjectCSharp\\MppProjectCSharp\\MppProjectCSharp.csproj": {
+    "D:\\Sem4\\Mpp\\mpp-proiect-csharp-MasterSpider-beep\\MppProjectCSharp\\MppProjectCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sem4\\Mpp\\MppProjectCSharp\\MppProjectCSharp\\MppProjectCSharp.csproj",
+        "projectUniqueName": "D:\\Sem4\\Mpp\\mpp-proiect-csharp-MasterSpider-beep\\MppProjectCSharp\\MppProjectCSharp.csproj",
         "projectName": "MppProjectCSharp",
-        "projectPath": "D:\\Sem4\\Mpp\\MppProjectCSharp\\MppProjectCSharp\\MppProjectCSharp.csproj",
+        "projectPath": "D:\\Sem4\\Mpp\\mpp-proiect-csharp-MasterSpider-beep\\MppProjectCSharp\\MppProjectCSharp.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "D:\\Sem4\\Mpp\\MppProjectCSharp\\MppProjectCSharp\\obj\\",
+        "outputPath": "D:\\Sem4\\Mpp\\mpp-proiect-csharp-MasterSpider-beep\\MppProjectCSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

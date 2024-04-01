@@ -1,10 +1,13 @@
 using log4net.Config;
 using MppProjectCSharp.repository;
+using MppProjectCSharp.repository.interfaces;
 using System.Configuration;
 using System.Diagnostics;
+using System.Windows;
 using TemaC.domain;
 using TemaC.domain.DTOs;
-using TemaC.repository;
+using MppProjectCSharp.services;
+using MppProjectCSharp.GUI;
 
 namespace MppProjectCSharp
 {
@@ -13,7 +16,6 @@ namespace MppProjectCSharp
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
-        [STAThread]
         //static void Main()
         //{
         //    // To customize application configuration such as set high DPI settings or default font,
@@ -22,13 +24,26 @@ namespace MppProjectCSharp
         //    Application.Run(new Form1());
         //}
 
+        private static services.Service createService(IDictionary<String, string> props)
+        {
+            IFlightsRepository flightsRepository = new FlightsRepository(props);
+            ITicketsRepository ticketsRepository = new TicketsRepository(props);
+            IUsersRepository usersRepository = new UsersRepository(props);
+
+            return new services.Service(flightsRepository, ticketsRepository, usersRepository);
+        }
+
+        [STAThread]
         static void Main(string[] args)
         {
             XmlConfigurator.Configure();
             IDictionary<String, string> props = new SortedList<String, String>();
             props.Add("ConnectionString", GetConnectionStringByName("AgentieDB"));
             test(props);
-            
+            ApplicationConfiguration.Initialize();
+            Service service = createService(props);
+            LoginGUI loginGUI = new LoginGUI(service);
+            Application.Run(loginGUI);
         }
 
         static private void test(IDictionary<String, string> props)
@@ -48,7 +63,11 @@ namespace MppProjectCSharp
             Debug.Assert(flights.ElementAt(0).AvailableSeats == 20);
             flight.AvailableSeats = 10;
             repoFlights.Update(flight);
-
+            Flight flight1;
+            flight1 = repoFlights.GetFlight(1);
+            Debug.Assert(flight1 == null);
+            flight1 = repoFlights.GetFlight(3);
+            Debug.Assert(flight1.Id == 3);
         }
         static string GetConnectionStringByName(string name)
         {

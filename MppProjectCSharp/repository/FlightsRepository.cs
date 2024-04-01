@@ -1,4 +1,6 @@
 ﻿using log4net;
+using MppProjectCSharp.repository.DBUtils;
+using MppProjectCSharp.repository.interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using TemaC.domain;
 using TemaC.domain.DTOs;
-using TemaC.repository;
 
 namespace MppProjectCSharp.repository
 {
@@ -27,18 +28,18 @@ namespace MppProjectCSharp.repository
 
         private string GetSqlString(FlightFilter filter)
         {
-            string sql = "select * from Flights";
+            string sql = "select * from Flights where availableSeats>0";
             if(filter.Destination==null && filter.DepartureDate == null)
             {
                 return sql;
             }
             else
             {
-                sql += " where";
+                sql += " and";
             }
             if (filter.Destination != null)
             {
-                sql += " destination=@destination";
+                sql += " destination LIKE @destination";
             }
             if(filter.DepartureDate != null && filter.Destination != null)
             {
@@ -61,7 +62,7 @@ namespace MppProjectCSharp.repository
                     {
                         var paramDest = command.CreateParameter();
                         paramDest.ParameterName = "@destination";
-                        paramDest.Value = filter.Destination;
+                        paramDest.Value = "%"+filter.Destination+"%";
                         command.Parameters.Add(paramDest);
                     }
                     if(filter.DepartureDate!= null)
@@ -148,6 +149,39 @@ namespace MppProjectCSharp.repository
                 }
             }
 
+        }
+
+        public Flight? GetFlight(int id)
+        {
+            log.InfoFormat("Entering GetFlight with id {0}", id);
+            using (var connection = DBUtils.DBUtils.getConnection(props))
+            {
+                var command = connection.CreateCommand();
+                command.CommandText = "select * from Flights where id=@id";
+                var paramId = command.CreateParameter() ;
+                paramId.ParameterName = "@id";
+                paramId.Value = id;
+                command.Parameters.Add(paramId);
+
+                var result = command.ExecuteReader();
+                if (result.Read())
+                {
+                    string destination = result.GetString(1);
+                    DateOnly departureDate = DateOnly.Parse(result.GetString(2));
+                    TimeOnly departureTime = TimeOnly.Parse(result.GetString(3));
+                    int availableSeats = result.GetInt32(4);
+                    string airport = result.GetString(5);
+                    Flight flight = new Flight(destination, departureDate, departureTime, availableSeats, airport);
+                    log.InfoFormat("Exiting GetFlight with value {0}", flight);
+                    flight.Id = id;
+                    return flight;
+                }
+                else
+                {
+                    log.InfoFormat("Exiting GetFlight with value {0}", null);
+                    return null;
+                }
+            }
         }
     }
 }

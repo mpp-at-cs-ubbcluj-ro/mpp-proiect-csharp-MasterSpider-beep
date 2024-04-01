@@ -1,6 +1,6 @@
 using TemaC.domain;
 
-namespace TemaC.repository;
+namespace MppProjectCSharp.repository.interfaces;
 
 public interface ITicketsRepository
 {

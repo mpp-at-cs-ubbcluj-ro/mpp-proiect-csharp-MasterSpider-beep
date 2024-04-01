@@ -26,7 +26,6 @@ namespace MppProjectCSharp.repository.DBUtils
 
             return ConnectionUtils.ConnectionFactory.getInstance().createConnection(props);
 
-
         }
     }
 }

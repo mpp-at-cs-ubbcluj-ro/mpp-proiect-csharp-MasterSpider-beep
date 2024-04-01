@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k8SpqjBCInXVA0dLdMwJB7cKm26Smljo9eme+CdyRwsnhvFC+Im3+CN4bx163PpPTLcXCH/eAbAoeGnPGOty6g==",
+  "dgSpecHash": "oROKZKVBodZ/5ToMeXpKEzpE7+qInLHh8nNVo/jyAGRb+kLenD9LbPXkO7xZYk55cChHnCiaMpUP0eSdM56mgw==",
   "success": true,
-  "projectFilePath": "D:\\Sem4\\Mpp\\MppProjectCSharp\\MppProjectCSharp\\MppProjectCSharp.csproj",
+  "projectFilePath": "D:\\Sem4\\Mpp\\mpp-proiect-csharp-MasterSpider-beep\\MppProjectCSharp\\MppProjectCSharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\log4net\\2.0.16\\log4net.2.0.16.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",

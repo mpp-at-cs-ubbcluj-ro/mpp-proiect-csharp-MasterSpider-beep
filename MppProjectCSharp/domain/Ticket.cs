@@ -8,15 +8,18 @@ public class Ticket : Entity
     private string clientName;
     private string address;
     private int noSeats;
+    private int flightId;
 
-    public Ticket(string clientName, string address, int noSeats)
+    public Ticket(string clientName, string address, int noSeats, int flightId)
     {
-        ClientName = clientName;
         tourists = new List<string>();
-        Address = address;
-        this.NoSeats = noSeats;
+        this.clientName = clientName;
+        this.address = address;
+        this.noSeats = noSeats;
+        this.flightId = flightId;
     }
 
+    public int FlightId { get => flightId; set => flightId = value; }
     public string ClientName { get => clientName; set => clientName = value; }
     public List<string> Tourists => tourists;
     public string Address { get => address; set => address = value; }

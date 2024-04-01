@@ -1,11 +1,11 @@
 ﻿using log4net;
+using MppProjectCSharp.repository.interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TemaC.domain;
-using TemaC.repository;
 
 namespace MppProjectCSharp.repository
 {
@@ -22,7 +22,46 @@ namespace MppProjectCSharp.repository
 
         public bool AddOne(Ticket ticket)
         {
-            throw new NotImplementedException();
+            log.InfoFormat("Entering AddOne with ticket: {0}", ticket.ToString());
+            using(var connection = DBUtils.DBUtils.getConnection(props))
+            {
+                var command = connection.CreateCommand();
+                command.CommandText = "insert into Tickets(tourists, clientName, address, noSeats, flight_id) values (@tourists, @clientName, @address, @noSeats, @flightId)";
+
+                string tourists = "";
+                var touristsTemp = ticket.Tourists;
+                foreach(var tourist in touristsTemp)
+                {
+                    tourists += tourist + ";";
+                }
+                var paramTourists = command.CreateParameter();
+                paramTourists.ParameterName = "@tourists";
+                paramTourists.Value = tourists;
+                command.Parameters.Add(paramTourists);
+
+                var paramClient = command.CreateParameter();
+                paramClient.ParameterName = "@clientName";
+                paramClient.Value = ticket.ClientName;
+                command.Parameters.Add(paramClient);
+
+                var paramAddress = command.CreateParameter();
+                paramAddress.ParameterName = "@address";
+                paramAddress.Value = ticket.Address;
+                command.Parameters.Add(paramAddress);
+
+                var paramSeats = command.CreateParameter();
+                paramSeats.ParameterName = "@noSeats";
+                paramSeats.Value = ticket.NoSeats;
+                command.Parameters.Add(paramSeats);
+
+                var paramFlight = command.CreateParameter();
+                paramFlight.ParameterName = "@flightId";
+                paramFlight.Value = ticket.FlightId;
+                command.Parameters.Add(paramFlight);
+
+                var result = command.ExecuteNonQuery();
+                return result > 0;
+            }
         }
 
         public List<Ticket> GetAll()
@@ -42,8 +81,9 @@ namespace MppProjectCSharp.repository
                         string tourists = result.GetString(2);
                         string address = result.GetString(3);
                         int noSeats = result.GetInt32(4);
-                        List<string> realtourists = tourists.Split(" ").ToList();
-                        Ticket ticket = new Ticket(clientName, address, noSeats);
+                        int flightId = result.GetInt32(5);
+                        List<string> realtourists = tourists.Split(";").ToList();
+                        Ticket ticket = new Ticket(clientName, address, noSeats,flightId);
                         ticket.Id= id;
                         foreach(var tourist in realtourists)
                         {
@@ -76,8 +116,9 @@ namespace MppProjectCSharp.repository
                         string tourists = result.GetString(2);
                         string address = result.GetString(3);
                         int noSeats = result.GetInt32(4);
-                        List<string> realtourists = tourists.Split(" ").ToList();
-                        Ticket ticket = new Ticket(clientName, address, noSeats);
+                        int flightId = result.GetInt32(5);
+                        List<string> realtourists = tourists.Split(";").ToList();
+                        Ticket ticket = new Ticket(clientName, address, noSeats, flightId);
                         ticket.Id = id;
                         foreach(var tourist in realtourists)
                         {
