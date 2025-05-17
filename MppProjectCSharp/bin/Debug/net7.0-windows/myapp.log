@@ -1150,3 +1150,45 @@
 2024-04-01 10:30:35,449 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
 2024-04-01 10:30:35,450 [1] INFO FlightsRepository - Entering GetFiltered with destination:Clu , date03/20/2024
 2024-04-01 10:30:35,452 [1] INFO FlightsRepository - Exisitn findFiltered, found 0 flights!
+2025-05-17 13:59:28,164 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2025-05-17 13:59:28,670 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2025-05-17 13:59:28,676 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2025-05-17 13:59:28,703 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2025-05-17 13:59:28,704 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2025-05-17 13:59:28,708 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2025-05-17 13:59:28,710 [1] INFO FlightsRepository - Entering Update with flight id 3
+2025-05-17 13:59:28,719 [1] INFO FlightsRepository - Exiting Update with value True
+2025-05-17 13:59:28,720 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2025-05-17 13:59:28,720 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2025-05-17 13:59:28,721 [1] INFO FlightsRepository - Entering Update with flight id 3
+2025-05-17 13:59:28,729 [1] INFO FlightsRepository - Exiting Update with value True
+2025-05-17 13:59:28,730 [1] INFO FlightsRepository - Entering GetFlight with id 1
+2025-05-17 13:59:28,731 [1] INFO FlightsRepository - Exiting GetFlight with value {0}
+2025-05-17 13:59:28,736 [1] INFO FlightsRepository - Entering GetFlight with id 3
+2025-05-17 13:59:28,740 [1] INFO FlightsRepository - Exiting GetFlight with value TemaC.domain.Flight
+2025-05-17 13:59:35,309 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2025-05-17 13:59:35,311 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2025-05-17 13:59:35,312 [1] INFO UsersRepository - Entering GetOne with username admin
+2025-05-17 13:59:35,751 [1] INFO FlightsRepository - Entering GetFiltered with destination: , date
+2025-05-17 13:59:35,752 [1] INFO FlightsRepository - Exisitn findFiltered, found 6 flights!
+2025-05-17 14:00:40,511 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2025-05-17 14:00:40,737 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2025-05-17 14:00:40,745 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date
+2025-05-17 14:00:40,768 [1] INFO FlightsRepository - Exisitn findFiltered, found 2 flights!
+2025-05-17 14:00:40,769 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2025-05-17 14:00:40,775 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2025-05-17 14:00:40,777 [1] INFO FlightsRepository - Entering Update with flight id 3
+2025-05-17 14:00:40,796 [1] INFO FlightsRepository - Exiting Update with value True
+2025-05-17 14:00:40,796 [1] INFO FlightsRepository - Entering GetFiltered with destination:test , date01/01/2024
+2025-05-17 14:00:40,797 [1] INFO FlightsRepository - Exisitn findFiltered, found 1 flights!
+2025-05-17 14:00:40,797 [1] INFO FlightsRepository - Entering Update with flight id 3
+2025-05-17 14:00:40,804 [1] INFO FlightsRepository - Exiting Update with value True
+2025-05-17 14:00:40,806 [1] INFO FlightsRepository - Entering GetFlight with id 1
+2025-05-17 14:00:40,807 [1] INFO FlightsRepository - Exiting GetFlight with value {0}
+2025-05-17 14:00:40,814 [1] INFO FlightsRepository - Entering GetFlight with id 3
+2025-05-17 14:00:40,818 [1] INFO FlightsRepository - Exiting GetFlight with value TemaC.domain.Flight
+2025-05-17 14:00:52,743 [1] INFO UsersRepository - Entering ExistsUser with admin admin
+2025-05-17 14:00:52,745 [1] INFO UsersRepository - Exiting ExistsUser with 1
+2025-05-17 14:00:52,745 [1] INFO UsersRepository - Entering GetOne with username admin
+2025-05-17 14:00:52,900 [1] INFO FlightsRepository - Entering GetFiltered with destination: , date
+2025-05-17 14:00:52,901 [1] INFO FlightsRepository - Exisitn findFiltered, found 6 flights!
